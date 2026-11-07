@@ -1,0 +1,8 @@
+{
+  "name": "iptv",
+  "version": "1.0.0",
+  "description": "VOD Player",
+  "packageType": "app",
+  "appName": "VOD Player",
+  "appPath": "app/index.html"
+}
