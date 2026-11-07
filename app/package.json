@@ -1,0 +1,11 @@
+{
+  "name": "tizen-vod-player",
+  "version": "1.0.0",
+  "description": "VOD Player for TizenBrew",
+  "appName": "VOD Player",
+  "main": "index.html",
+  "tizenbrew": {
+    "appPath": "index.html",
+    "packageType": "app"
+  }
+}
