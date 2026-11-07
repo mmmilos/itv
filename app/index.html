@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOD Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="setup-screen" class="screen active">
+        <div class="setup-box">
+            <h1>VOD Setup</h1>
+            <input type="text" id="xtream-url" placeholder="Server URL (http://...)">
+            <input type="text" id="xtream-user" placeholder="Benutzername">
+            <input type="password" id="xtream-pass" placeholder="Passwort">
+            <button id="btn-connect" tabindex="0">Verbinden</button>
+        </div>
+    </div>
 
+    <!-- Main App Screen -->
+    <div id="app-screen" class="screen">
+        <!-- Sidebar (Kategorien) -->
+        <div id="sidebar">
+            <div class="logo">VOD<span>Player</span></div>
+            <ul id="category-list">
+                <!-- Kategorien werden per JS geladen -->
+            </ul>
+        </div>
+
+        <!-- Main Content (Filmraster) -->
+        <div id="main-content">
+            <div id="top-bar">
+                <h2 id="current-category-title">Bitte Kategorie wählen</h2>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Suchen..." tabindex="0">
+                </div>
+            </div>
+            <div id="movie-grid">
+                <!-- Filme werden hier per JS eingefügt -->
+            </div>
+            <!-- Versteckter Button für Nachladen -->
+            <button id="load-more" style="display:none;">Mehr laden</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
